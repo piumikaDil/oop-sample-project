@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.icet.oop.controller.CustomerViewFormController">
+   <children>
+      <TableView fx:id="tblCustomer" layoutX="1.0" layoutY="100.0" prefHeight="301.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="cusId" prefWidth="272.0" text="Customer ID" />
+          <TableColumn fx:id="cusName" minWidth="0.0" prefWidth="327.0" text="Customer Name" />
+        </columns>
+      </TableView>
+      <Label layoutX="161.0" layoutY="24.0" text="View All Customers">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Separator layoutX="135.0" layoutY="72.0" prefHeight="0.0" prefWidth="360.0" />
+   </children>
+</AnchorPane>

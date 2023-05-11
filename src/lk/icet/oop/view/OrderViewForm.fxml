@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="472.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.icet.oop.controller.OrderViewFormController">
+   <children>
+      <Label layoutX="233.0" layoutY="31.0" text="View All Orders">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Separator layoutX="232.0" layoutY="69.0" prefWidth="200.0" />
+      <TableView fx:id="tblOrder" layoutY="149.0" prefHeight="329.0" prefWidth="663.0">
+        <columns>
+          <TableColumn fx:id="colOrderId" prefWidth="231.0" text="Order ID" />
+          <TableColumn fx:id="colCusId" prefWidth="257.0" text="Customer ID" />
+            <TableColumn fx:id="colQty" prefWidth="174.0" text="QTY" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
